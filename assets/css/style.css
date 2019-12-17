@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+* {
+    font-family: 'Raleway', sans-serif;
+    color: #565656;
+}
+
+.bg-centro {
+    background-color: rgb(215, 205, 198);
+    min-height: 450px;
+}
+
+.title-first-page {
+    color: #000;
+    /*text-shadow: 1px 1px 0px rgb(146, 220, 250);*/
+    font-family: 'Raleway', sans-serif;
+}
+
+.bg-filtro {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.ico-btn {
+    /*box-shadow: 5px 5px 20px #fff;*/
+}

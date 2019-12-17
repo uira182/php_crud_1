@@ -6,7 +6,7 @@ form_grava.addEventListener("submit", function(event) {
     for (let info of cad_info) {
         if (info.value == '') {
             cont++;
-            alert("Preencha os campo: " + info.alt);
+            alert("Preencha o campo: " + info.placeholder);
             event.preventDefault();
             break;
         }
@@ -18,13 +18,14 @@ form_grava.addEventListener("submit", function(event) {
 var link_del = document.querySelectorAll('.del_link');
 for (let del of link_del) {
     del.addEventListener("click", function(event) {
+        console.log(del);
         let del_nome = del.name;
-        let conf = confirm("Deseja realmente excluir o cliente: " + del_nome + "?");
+        let conf = confirm("Deseja realmente excluir: " + del_nome + " ?");
 
         if (!conf) {
             event.preventDefault();
         } else {
-            alert('Usuario foi deletado!');
+            alert('Cliente: ' + del_nome + ' foi deletado com sucesso!');
         }
     });
 }
